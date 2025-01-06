@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 source ./opt/ros/noetic/setup.bash
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 roscore &
