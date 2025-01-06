@@ -1,6 +1,4 @@
 #!/bin/sh
-echo pwd
-echo ls
 source ./opt/ros/noetic/setup.bash
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 roscore &
