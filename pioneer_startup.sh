@@ -9,3 +9,5 @@ cd src
 rosrun pioneer_controller remote_connection.py &
 sleep 2
 rosrun rosaria RosAria &
+
+wait
