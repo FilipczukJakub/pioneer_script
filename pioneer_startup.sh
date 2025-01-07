@@ -5,7 +5,7 @@ export ROS_HOSTNAME=localhost
 set -e
 source /opt/ros/noetic/setup.bash
 roscore &
-sleep 5
+until rostopic list; do sleep 1; done
 cd catkin_ws
 source ./devel/setup.bash
 cd src
