@@ -2,8 +2,8 @@
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 export ROS_MASTER_URI=http://localhost:11311
 export ROS_HOSTNAME=localhost
-
-source ./opt/ros/noetic/setup.bash
+set -e
+source /opt/ros/noetic/setup.bash
 roscore &
 sleep 5
 cd catkin_ws
