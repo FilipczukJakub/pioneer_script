@@ -10,10 +10,6 @@ cd catkin_ws
 source ./devel/setup.bash
 cd src
 
-fuser -k 8765/tcp
-fuser -k 8766/tcp
-fuser -k 12345/tcp
-
 rosrun pioneer_controller remote_connection.py &
 sleep 2
 rosrun rosaria RosAria &
